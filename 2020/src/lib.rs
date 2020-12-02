@@ -1,6 +1,7 @@
 #![allow(dead_code)]
 
 mod day1;
+mod day2;
 
 pub trait Day {
     type Output: std::fmt::Debug + PartialEq;
@@ -17,4 +18,14 @@ fn day_1_1() {
 #[test]
 fn day_1_2() {
     assert_eq!(176647680, day1::Day1::part2());
+}
+
+#[test]
+fn day_2_1() {
+    assert_eq!(622, day2::Day2::part1());
+}
+
+#[test]
+fn day_2_2() {
+    assert_eq!(263, day2::Day2::part2());
 }
