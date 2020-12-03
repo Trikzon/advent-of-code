@@ -1,5 +1,3 @@
-use std::collections::HashSet;
-
 const INPUT: &str = include_str!("day3.input");
 
 pub struct Day3;
@@ -21,17 +19,16 @@ impl crate::Day for Day3 {
     }
 }
 
-// "rise" even though it's going down... what's the opposite of rise?
-fn count_trees_from_slope(rise: usize, run: usize) -> usize {
+fn count_trees_from_slope(fall: usize, run: usize) -> usize {
     let max_width = INPUT.lines().nth(0).unwrap().len();
 
-    let mut next_x= run;
-    let mut next_y = rise;
+    let mut next_x = run;
+    let mut next_y = fall;
 
     INPUT.lines().enumerate().filter(|(y, line)| {
         line.chars().enumerate().filter(|(x, c)| {
             if &next_x == x && &next_y == y {
-                next_y += rise;
+                next_y += fall;
                 next_x += run;
                 if next_x >= max_width {
                     next_x = next_x - max_width;
