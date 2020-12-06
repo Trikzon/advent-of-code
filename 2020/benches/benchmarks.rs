@@ -12,6 +12,8 @@ pub fn criterion_benchmark(c: &mut Criterion) {
     c.bench_function("day_4_2", |b| b.iter(|| day4::Day4::part2()));
     c.bench_function("day_5_1", |b| b.iter(|| day5::Day5::part1()));
     c.bench_function("day_5_2", |b| b.iter(|| day5::Day5::part2()));
+    c.bench_function("day_6_1", |b| b.iter(|| day6::Day6::part1()));
+    c.bench_function("day_6_2", |b| b.iter(|| day6::Day6::part2()));
 }
 
 criterion_group!(benches, criterion_benchmark);
