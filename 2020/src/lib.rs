@@ -1,4 +1,5 @@
 #![allow(dead_code)]
+#![warn(clippy::all)]
 
 pub mod day1;
 pub mod day2;
@@ -6,6 +7,8 @@ pub mod day3;
 pub mod day4;
 pub mod day5;
 pub mod day6;
+
+pub mod day8;
 
 pub trait Day {
     type Output: std::fmt::Debug + PartialEq;
@@ -73,3 +76,14 @@ fn day_6_1() {
 fn day_6_2() {
     assert_eq!(3243, day6::Day6::part2());
 }
+
+#[test]
+fn day_8_1() {
+    assert_eq!(1217, day8::Day8::part1());
+}
+
+#[test]
+fn day_8_2() {
+    assert_eq!(501, day8::Day8::part2());
+}
+
