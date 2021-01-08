@@ -9,6 +9,7 @@ pub mod day5;
 pub mod day6;
 
 pub mod day8;
+pub mod day9;
 
 pub trait Day {
     type Output: std::fmt::Debug + PartialEq;
@@ -87,3 +88,12 @@ fn day_8_2() {
     assert_eq!(501, day8::Day8::part2());
 }
 
+#[test]
+fn day_9_1() {
+    assert_eq!(1930745883, day9::Day9::part1());
+}
+
+#[test]
+fn day_9_2() {
+    assert_eq!(268878261, day9::Day9::part2());
+}
