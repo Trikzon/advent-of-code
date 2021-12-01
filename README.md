@@ -3,7 +3,11 @@ My Advent of Code solutions. https://adventofcode.com/
 
 ## 2021
 
-This year I am using [Kotlin](https://kotlinlang.org/). I don't know if there's any way to get benchmarks for the runtime... but it will most likely be much slower than previous years as they used [Rust](https://www.rust-lang.org/).
+This year I am using [Kotlin](https://kotlinlang.org/). I expect times to be much slower than previous years.
+
+| Day                                                       | Part 1   | Part 2   |
+| --------------------------------------------------------- | -------- | -------- |
+| [Day 1](2021/src/main/kotlin/com/trikzon/aoc2021/Day1.kt) | 29.138ms | 42.057ms |
 
 ## 2020
 
