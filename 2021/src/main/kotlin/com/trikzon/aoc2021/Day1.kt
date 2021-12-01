@@ -4,10 +4,8 @@ fun main(args: Array<String>) {
     val input = getInputStringFromFile("day1.txt")
     val depths = input.lines().map { line -> line.toInt() }
 
-    assert(partOne(depths) == 1624)
-    println("Successfully completed part one. Answer: 1624")
-    assert(partTwo(depths) == 1653)
-    println("Successfully completed part two. Answer: 1653")
+    benchmark(Part.One, ::partOne, depths, 1624)
+    benchmark(Part.Two, ::partTwo, depths, 1653)
 }
 
 fun partOne(depths: List<Int>): Int {
