@@ -1,7 +1,12 @@
 .idea/
+.DS_Store
 
 2015/Cargo.lock
 2015/target/
 
 2020/Cargo.lock
 2020/target/
+
+2021/.gradle/
+2021/.idea/
+2021/build/
