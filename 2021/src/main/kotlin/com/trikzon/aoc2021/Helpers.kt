@@ -32,9 +32,9 @@ fun getTimeString(nanoSeconds: Long): String {
     val microSeconds = nanoSeconds / 1000f
 
     return if (microSeconds >= 1000f) {
-        "${microSeconds / 1000f}µs"
+        "${microSeconds / 1000f}ms"
     } else {
-        "${microSeconds}ms"
+        "${microSeconds}µs"
     }
 }
 
