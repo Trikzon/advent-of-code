@@ -1,7 +1,7 @@
 package com.trikzon.aoc2021
 
 fun getInputStringFromFile(path: String): String {
-    return object {}.javaClass.getResource("/day1.txt").readText()
+    return object {}.javaClass.getResource(path).readText()
 }
 
 enum class Part {
@@ -10,8 +10,8 @@ enum class Part {
 }
 
 fun <A, R> benchmark(part: Part, function: (A) -> R, arg: A, solution: R) {
-    val times = Array<Long>(500) { 0 }
-    for (i in 0 until 500) {
+    val times = Array<Long>(50000) { 0 }
+    for (i in 0 until 50000) {
         val startTime = System.nanoTime()
         val result = function(arg)
         val endTime = System.nanoTime()

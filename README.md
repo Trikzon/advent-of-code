@@ -7,7 +7,8 @@ This year I am using [Kotlin](https://kotlinlang.org/). I expect times to be muc
 
 | Day                                                       | Part 1   | Part 2   |
 | --------------------------------------------------------- | -------- | -------- |
-| [Day 1](2021/src/main/kotlin/com/trikzon/aoc2021/Day1.kt) | 29.138µs | 42.057µs |
+| [Day 1](2021/src/main/kotlin/com/trikzon/aoc2021/Day1.kt) | 176.60µs | 178.88µs |
+| [Day 2](2021/src/main/kotlin/com/trikzon/aoc2021/Day2.kt) | 164.50µs | 197.59µs |
 
 ## 2020
 
