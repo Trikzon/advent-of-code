@@ -9,9 +9,9 @@ enum class Part {
     Two,
 }
 
-fun <A, R> benchmark(part: Part, function: (A) -> R, arg: A, solution: R) {
-    val times = Array<Long>(50000) { 0 }
-    for (i in 0 until 50000) {
+fun <A, R> benchmark(part: Part, function: (A) -> R, arg: A, solution: R, runs: Int) {
+    val times = Array<Long>(runs) { 0 }
+    for (i in 0 until runs) {
         val startTime = System.nanoTime()
         val result = function(arg)
         val endTime = System.nanoTime()
