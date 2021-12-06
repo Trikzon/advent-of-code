@@ -3,8 +3,8 @@ package com.trikzon.aoc2021
 fun main() {
     val input = getInputStringFromFile("/day6.txt")
 
-    benchmark(Part.One, ::daySixPartOne, input, 5934)
-    benchmark(Part.Two, ::daySixPartTwo, input, 377263)
+    benchmark(Part.One, ::daySixPartOne, input, 5934, 500)
+    benchmark(Part.Two, ::daySixPartTwo, input, 377263, 50000)
 }
 
 // Note: This was a slow naive solution. Part 2 is much faster. I'm keeping

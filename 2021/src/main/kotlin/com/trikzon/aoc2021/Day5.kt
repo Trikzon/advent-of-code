@@ -5,8 +5,8 @@ import kotlin.math.min
 
 fun main() {
     val input = getInputStringFromFile("/day5.txt")
-    benchmark(Part.One, ::dayFivePartOne, input, 5442)
-    benchmark(Part.Two, ::dayFivePartTwo, input, 19571)
+    benchmark(Part.One, ::dayFivePartOne, input, 5442, 500)
+    benchmark(Part.Two, ::dayFivePartTwo, input, 19571, 500)
 }
 
 fun dayFivePartOne(input: String): Int {
