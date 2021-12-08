@@ -12,6 +12,7 @@ This year I am using [Kotlin](https://kotlinlang.org/). I expect times to be muc
 | [Day 5](2021/src/main/kotlin/com/trikzon/aoc2021/Day5.kt) | 15.520ms | 52.924ms |
 | [Day 6](2021/src/main/kotlin/com/trikzon/aoc2021/Day6.kt) | 33.197ms | 10.923µs |
 | [Day 7](2021/src/main/kotlin/com/trikzon/aoc2021/Day7.kt) | 4.7552ms | 926.00ms |
+| [Day 8](2021/src/main/kotlin/com/trikzon/aoc2021/Day8.kt) | 229.54µs | 966.65µs |
 
 ## 2020
 
