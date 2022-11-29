@@ -1,4 +1,4 @@
-# advent-of-code
+# Advent of Code
 My Advent of Code solutions. https://adventofcode.com/
 
 - [2020](https://github.com/Trikzon/advent-of-code/tree/main/2020) using Rust
