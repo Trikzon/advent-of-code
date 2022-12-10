@@ -5,7 +5,7 @@
 #include "../aoc.h"
 
 namespace aoc {
-    const std::map<int, Solution(*)(std::string_view)> &days();
+    const std::map<int, Solution(*)(std::string)> &days();
 
-    Solution day01(std::string_view);
+    Solution day01(std::string);
 }

@@ -3,7 +3,7 @@ project(2022)
 
 set(CMAKE_CXX_STANDARD 23)
 
-add_executable(2022 src/main.cpp src/aoc.h src/days/days.h src/days/days.cpp src/days/day01.cpp)
+add_executable(2022 src/main.cpp src/aoc.h src/days/days.h src/days/days.cpp src/days/day01.cpp src/aoc.cpp)
 
 add_custom_command(
         TARGET 2022 POST_BUILD
