@@ -25,13 +25,17 @@ void runDay(int day) {
         return;
     }
 
-    const auto input = readInput(day, false);
+    const auto example { readInput(day, true) };
+    const auto input { readInput(day, false) };
 
-    const auto solution = days.find(day)->second(input);
+    const auto exampleSolution { days.find(day)->second(example) };
+    const auto inputSolution { days.find(day)->second(input) };
 
     std::cout << "Day " << day;
-    std::cout << " { " << solution.partA;
-    std::cout << ", "  << solution.partB << " }" << std::endl;
+    std::cout << " { example: [ " << exampleSolution.partA;
+    std::cout << ", "  << exampleSolution.partB << " ], ";
+    std::cout << " input: [ " << inputSolution.partA;
+    std::cout << ", " << inputSolution.partB << " ] }" << std::endl;
 }
 
 int main() {
