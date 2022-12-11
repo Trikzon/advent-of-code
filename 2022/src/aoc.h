@@ -10,5 +10,5 @@ namespace aoc {
         std::string partB;
     };
 
-    std::vector<std::string> getLines(std::string input);
+    std::vector<std::string> getLines(const std::string& input);
 }
