@@ -1,16 +1,17 @@
 #include "./days.h"
 
+#include <utility>
 #include <vector>
 
 namespace aoc {
-    Solution day01(std::string input) {
+    Solution day01(const std::string& input) {
         std::vector<std::string> lines { getLines(input) };
 
         std::vector<long long> calories;
 
         long long accumulator { 0 };
-        for (const auto line : lines) {
-            if (line == "") {
+        for (const auto& line : lines) {
+            if (line.empty()) {
                 calories.push_back(accumulator);
                 accumulator = 0;
             } else {
