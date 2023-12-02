@@ -2,7 +2,7 @@
 
 using Aoc2023;
 
-var day = new Day01();
+var day = new Day02();
 
 day.Part1();
 day.Part2();
