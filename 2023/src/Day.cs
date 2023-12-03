@@ -2,7 +2,7 @@ namespace Aoc2023;
 
 public abstract class Day
 {
-    protected readonly string Input;
+    protected string Input;
     
     protected Day(string day)
     {
