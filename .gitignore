@@ -1,23 +1,20 @@
-**/.idea/
+# MacOS
 **/.DS_Store
 
-2015/Cargo.lock
-2015/target/
-2015/src/*.input
+# Editors
+**/.idea/
 
-2020/Cargo.lock
-2020/target/
-2020/src/*.input
+# C++
+**/cmake-build-debug/
 
-2021/.gradle/
-2021/.idea/
-2021/build/
-2021/src/main/resources/
+# C#
+**/bin/
+**/obj/
 
-2022/cmake-build-debug/
-2022/2022
-2022/inputs/
+# Java
+**/.gradle/
+**/build/
 
-2023/bin/
-2023/obj/
-2023/inputs/
+# Rust
+**/Cargo.lock
+**/target/
