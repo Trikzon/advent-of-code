@@ -23,3 +23,9 @@ pub fn read_puzzle_input_string(day: u8, example: bool) -> String {
         .expect("puzzle input should be readable as a string");
     input
 }
+
+pub fn read_puzzle_input_grid(day: u8, example: bool) -> Vec<Vec<char>> {
+    read_puzzle_input_lines(day, example)
+        .map(|line| line.chars().collect())
+        .collect()
+}
