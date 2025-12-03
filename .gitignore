@@ -18,3 +18,7 @@
 # Rust
 **/Cargo.lock
 **/target/
+
+# Zig
+**/.zig-cache/
+**/zig-out/
