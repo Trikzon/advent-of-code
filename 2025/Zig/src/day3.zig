@@ -3,6 +3,7 @@ const utils = @import("utils.zig");
 
 pub fn part_one(gpa: std.mem.Allocator, example: bool) !i64 {
     const input = try utils.read_puzzle_input(gpa, 3, example);
+    defer gpa.free(input);
 
     var total_output: i64 = 0;
 
@@ -31,6 +32,7 @@ pub fn part_one(gpa: std.mem.Allocator, example: bool) !i64 {
 
 pub fn part_two(gpa: std.mem.Allocator, example: bool) !i64 {
     const input = try utils.read_puzzle_input(gpa, 3, example);
+    defer gpa.free(input);
 
     var total_output: i64 = 0;
 
