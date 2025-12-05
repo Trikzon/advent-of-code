@@ -3,6 +3,7 @@ const std = @import("std");
 const day1 = @import("day1.zig");
 const day2 = @import("day2.zig");
 const day3 = @import("day3.zig");
+const day4 = @import("day4.zig");
 
 pub fn main() !void {
     const gpa = std.heap.smp_allocator;
@@ -15,4 +16,7 @@ pub fn main() !void {
     
     std.debug.print("Solution for Day 3, Part 1: {}\n", .{try day3.part_one(gpa, false)});
     std.debug.print("Solution for Day 3, Part 2: {}\n", .{try day3.part_two(gpa, false)});
+    
+    std.debug.print("Solution for Day 4, Part 1: {}\n", .{try day4.part_one(gpa, false)});
+    std.debug.print("Solution for Day 4, Part 2: {}\n", .{try day4.part_two(gpa, false)});
 }
